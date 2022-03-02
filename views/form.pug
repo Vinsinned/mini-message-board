@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  head
+  body
+    h1= heading
+    form(action='/new', method='POST')
+      p
+        | name: 
+        input(name='name', value='', type='text', required, autocomplete="off")
+        | text: 
+        input(name='text', value='', type='text', required, autocomplete="off")
+      input(value='Submit', type='submit')
